@@ -2,7 +2,9 @@
 
 活动链接 —— [算法基础课](https://www.acwing.com/activity/content/11/)
 
-## 快速排序
+## 排序
+
+### 快速排序
 
 模板题 [AcWing 785. 快速排序](https://www.acwing.com/problem/content/787/)
 
@@ -22,7 +24,7 @@ void quick_sort(int q[], int l, int r)
 }
 ```
 
-## 归并排序
+### 归并排序
 
 模板题 [AcWing 787. 归并排序](https://www.acwing.com/problem/content/789/)
 
@@ -49,7 +51,9 @@ erge_sort(int q[], int l, int r)
 
 ## 二分法
 
-整数二分 [AcWing 789. 数的范围](https://www.acwing.com/problem/content/791/)
+### 整数二分
+
+[AcWing 789. 数的范围](https://www.acwing.com/problem/content/791/)
 
 ```C++
 bool check(int x) {/* ... */} // 检查x是否满足某种性质
@@ -78,7 +82,9 @@ int bsearch_2(int l, int r)
 }
 ```
 
-浮点数二分 [AcWing 790. 数的三次方根](https://www.acwing.com/problem/content/792/)
+### 浮点数二分
+
+[AcWing 790. 数的三次方根](https://www.acwing.com/problem/content/792/)
 
 ```C++
 bool check(double x) {/* ... */} // 检查x是否满足某种性质
@@ -98,7 +104,9 @@ double bsearch_3(double l, double r)
 
 ## 大整数
 
-- 高精度加法 —— 模板题 [AcWing 791. 高精度加法]()
+### 高精度加法
+
+[AcWing 791. 高精度加法](https://www.acwing.com/problem/content/793/)
 
 ```C++
 // C = A + B, A >= 0, B >= 0
@@ -121,7 +129,9 @@ vector<int> add(vector<int> &A, vector<int> &B)
 }
 ```
 
-- 高精度减法 —— 模板题 [AcWing 792. 高精度减法]()
+### 高精度减法
+
+[AcWing 792. 高精度减法](https://www.acwing.com/problem/content/793/)
 
 ```C++
 // C = A - B, 满足A >= B, A >= 0, B >= 0
@@ -142,7 +152,9 @@ vector<int> sub(vector<int> &A, vector<int> &B)
 }
 ```
 
-- 高精度乘低精度 —— 模板题 [AcWing 793. 高精度乘法]()
+### 高精度乘低精度
+
+[AcWing 793. 高精度乘法](https://www.acwing.com/problem/content/794/)
 
 ```C++
 // C = A * b, A >= 0, b > 0
@@ -164,7 +176,9 @@ vector<int> mul(vector<int> &A, int b)
 }
 ```
 
-- 高精度除以低精度 —— 模板题 [AcWing 794. 高精度除法]()
+### 高精度除以低精度
+
+[AcWing 794. 高精度除法](https://www.acwing.com/problem/content/795/)
 
 ```C++
 // A / b = C ... r, A >= 0, b > 0
@@ -186,7 +200,9 @@ vector<int> div(vector<int> &A, int b, int &r)
 
 ## 前缀和
 
-- 一维前缀和 —— 模板题 [AcWing 795. 前缀和]()
+### 一维前缀和
+
+[AcWing 795. 前缀和](/1.%20基础算法/10-795.%20前缀和.md)
 
 ```C++
 S[i] = a[1] + a[2] + ... a[i]
@@ -195,7 +211,9 @@ a[l] + ... + a[r] = S[r] - S[l - 1]
 for(int i = 0; i < a.size(); i++) //todo
 ```
 
-- 二维前缀和 —— 模板题 [AcWing 796. 子矩阵的和]()
+### 二维前缀和
+
+[AcWing 796. 子矩阵的和](/1.%20基础算法/11-796.%20子矩阵的和.md)
 
 第 i 行 j 列格子左上部分所有元素的和：`S[i, j]`
 
@@ -206,14 +224,18 @@ S[x2, y2] - S[x1 - 1, y2] - S[x2, y1 - 1] + S[x1 - 1, y1 - 1]
 
 ## 差分
 
-一维差分 —— 模板题 [AcWing 797. 差分]()
+### 一维差分
+
+[AcWing 797. 差分](/1.%20基础算法/12-797.%20差分.md)
 
 ```c++
 //给区间[l, r]中的每个数加上 c：
 B[l] += c, B[r + 1] -= c
 ```
 
-二维差分 —— 模板题 [AcWing 798. 差分矩阵]()
+### 二维差分
+
+[AcWing 798. 差分矩阵](/1.%20基础算法/13-798.%20差分矩阵.md)
 
 ```C++
 //给以(x1, y1)为左上角，(x2, y2)为右下角的子矩阵中的所有元素加上 c：
@@ -225,7 +247,7 @@ S[x2 + 1, y2 + 1] += c
 
 ## 位运算
 
-模板题 [AcWing 801. 二进制中 1 的个数]()
+模板题 [AcWing 801. 二进制中 1 的个数](/1.%20基础算法/16-801.%20二进制中1的个数.md)
 
 求 n 的第 k 位数字: `n >> k & 1`
 
@@ -233,8 +255,8 @@ S[x2 + 1, y2 + 1] += c
 
 ## 双指针算法
 
-- [AcWIng 799. 最长连续不重复子序列]()
-- [AcWing 800. 数组元素的目标和]()
+- [AcWIng 799. 最长连续不重复子序列](/1.%20基础算法/14-799.%20最长连续不重复子序列.md)
+- [AcWing 800. 数组元素的目标和](/1.%20基础算法/15-800.%20数组元素的目标和.md)
 
 ```C++
 for (int i = 0, j = 0; i < n; i ++ )

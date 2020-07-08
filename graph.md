@@ -261,7 +261,7 @@ int bellman_ford()
 
 ### spfa 算法（队列优化的 Bellman-Ford 算法
 
-模板题 AcWing 851. spfa 求最短路
+模板题 [AcWing 851. spfa 求最短路]()
 
 时间复杂度 平均情况下 O(m)O(m)，最坏情况下 O(nm)O(nm), nn 表示点数，mm 表示边数
 
